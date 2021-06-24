@@ -1,0 +1,25 @@
+2021-06-24 23:46:27.947  WARN 15212 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-24 23:47:02.625  WARN 15212 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-24 23:51:22.423  WARN 15212 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-24 23:51:45.940  WARN 30068 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-24 23:51:46.780  WARN 30068 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2021-06-24 23:51:46.816  WARN 30068 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+2021-06-24 23:51:46.854 ERROR 30068 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2021-06-24 23:52:11.059  INFO 15212 --- [restartedMain] c.e.addressbook.AddressBookApplication   : Starting AddressBookApplication using Java 15.0.2 on LAPTOP-Q9T3UUC8 with PID 15212 (C:\Users\tanya\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\addressBook\bin\main started by tanya in C:\Users\tanya\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\addressBook)
+2021-06-24 23:52:11.059 DEBUG 15212 --- [restartedMain] c.e.addressbook.AddressBookApplication   : Running with Spring Boot v2.5.1, Spring v5.3.8
+2021-06-24 23:52:11.059  INFO 15212 --- [restartedMain] c.e.addressbook.AddressBookApplication   : The following profiles are active: dev
+2021-06-24 23:52:11.599  WARN 15212 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-24 23:52:11.663  INFO 15212 --- [restartedMain] c.e.addressbook.AddressBookApplication   : Started AddressBookApplication in 0.635 seconds (JVM running for 34007.802)
