@@ -10,6 +10,7 @@ public class ResponseDTO {
 	public ResponseDTO() {
 		
 	}
+	
 	public ResponseDTO(String message, Object data) {
 		super();
 		this.message = message;
