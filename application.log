@@ -57,3 +57,6 @@ Identify and stop the process that's listening on port 8080 or configure this ap
 2021-06-25 00:09:42.013 DEBUG 29364 --- [restartedMain] c.e.addressbook.AddressBookApplication   : Running with Spring Boot v2.5.1, Spring v5.3.8
 2021-06-25 00:09:42.014  INFO 29364 --- [restartedMain] c.e.addressbook.AddressBookApplication   : The following profiles are active: dev
 2021-06-25 00:09:44.616  WARN 29364 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-25 00:09:44.938  INFO 29364 --- [restartedMain] c.e.addressbook.AddressBookApplication   : Started AddressBookApplication in 3.274 seconds (JVM running for 4.072)
+2021-06-25 00:09:44.941  INFO 29364 --- [restartedMain] c.e.addressbook.AddressBookApplication   : Address Book app started in DEV Environment
+2021-06-25 00:09:44.942  INFO 29364 --- [restartedMain] c.e.addressbook.AddressBookApplication   : Address Book DB user is addressbookuser 
