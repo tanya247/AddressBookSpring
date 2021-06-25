@@ -21,8 +21,12 @@ import com.example.addressbook.dto.ResponseDTO;
 import com.example.addressbook.model.AddressBookData;
 import com.example.addressbook.services.IAddressBookService;
 
+import lombok.extern.slf4j.Slf4j;
+import sun.util.logging.resources.logging;
+
 @RestController
 @RequestMapping("/addressbook")
+@Slf4j
 public class AddressBookController {
 	
 	@Autowired
@@ -44,6 +48,7 @@ public class AddressBookController {
 	
 	@PostMapping("/create")
 	public ResponseEntity<ResponseDTO> addAddressBookData(@Valid @RequestBody AddressBookDTO addressBookDTO){
+		log.debug("Address Book Dto: "+addressBookDTO.toString());
 		AddressBookData addressBookData = addressBookService.createAddressBookData(addressBookDTO);
 		ResponseDTO respDTO = new ResponseDTO("Create AddressBOOK Data Successfull", addressBookData);
 		return new ResponseEntity<ResponseDTO>(respDTO, HttpStatus.OK);
