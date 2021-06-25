@@ -203,3 +203,4 @@ java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length 0
 2021-06-26 01:27:11.760  INFO 2860 --- [restartedMain] c.e.addressbook.AddressBookApplication   : Address Book app started in DEV Environment
 2021-06-26 01:27:11.760  INFO 2860 --- [restartedMain] c.e.addressbook.AddressBookApplication   : Address Book DB user is addressbookuser 
 2021-06-26 01:28:47.022 DEBUG 2860 --- [http-nio-8080-exec-2] c.e.a.controller.AddressBookController   : Address Book Dto: AddressBookDTO(name=Abhi, address=dfff, state=MP, city=chhatarpur, zip=0, PhoneNo=7987469952)
+2021-06-26 01:29:12.273 DEBUG 2860 --- [http-nio-8080-exec-3] c.e.a.controller.AddressBookController   : Address Book Dto: AddressBookDTO(name=Abhi, address=dfff, state=MP, city=chhatarpur, zip=471001, PhoneNo=7987469952)
