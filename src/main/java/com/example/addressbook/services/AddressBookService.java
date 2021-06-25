@@ -29,7 +29,7 @@ public class AddressBookService implements IAddressBookService {
 
 	@Override
 	public AddressBookData createAddressBookData(AddressBookDTO addressBookDTO) {
-		AddressBookData addressBookData = new AddressBookData(1, addressBookDTO);
+		AddressBookData addressBookData = new AddressBookData(addressBookDataList.size()+1, addressBookDTO);
 		addressBookDataList.add(addressBookData);
 		return addressBookData;
 	}
@@ -45,8 +45,16 @@ public class AddressBookService implements IAddressBookService {
 
 	@Override
 	public void deleteAddressBookData(int addId) {
-		addressBookDataList.remove(addId-1);
+		AddressBookData addressBookData = addressBookDataList.stream()
+				   											 .filter(addressData -> addressData.getAddressBookId() == addId)
+				   											 .findFirst()
+				   											 .orElseThrow(() -> new AddressBookException("Delete cann't be successfull because id is incorrect"));;
+		int m = addressBookDataList.indexOf(addressBookData);
+		addressBookDataList.remove(m);
+
+}
+				   
 		
-	}
+	
 
 }
