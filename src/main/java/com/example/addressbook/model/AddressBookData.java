@@ -11,8 +11,8 @@ public class AddressBookData {
 	private String address;
 	private String state;
 	private String city;
-	private int zip;
-	private long PhoneNo;
+	private String zip;
+	private String PhoneNo;
 	
 	public AddressBookData() {
 		

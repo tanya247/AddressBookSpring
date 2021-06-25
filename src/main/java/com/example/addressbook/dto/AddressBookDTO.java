@@ -12,23 +12,27 @@ public @ToString class AddressBookDTO {
 	public String name;
 	@NotEmpty(message = "Address must not be Empty")
 	public String address;
+	@NotEmpty(message = "State must not be Empty")
 	public String state;
+	@NotEmpty(message = "City must not be Empty")
 	public String city;
-	public int zip;
-	public long PhoneNo;
+	@Pattern(regexp = "^[0-9]{6}$",message ="Invalid Zip")
+	public String zip;
+	@Pattern(regexp = "[0-9]{10}",message ="Invalid Phone No")
+	public String PhoneNo;
 	
 	public AddressBookDTO() {
 		super();
 	}
 
-	public AddressBookDTO(String name, String address, String state, String city, int zip,long phoneNo) {
+	public AddressBookDTO(String name, String address, String state, String city, String zip,String phoneNo) {
 		super();
 		this.name = name;
 		this.address = address;
 		this.state = state;
 		this.city = city;
 		this.zip = zip;
-		PhoneNo = phoneNo;
+		this.PhoneNo = phoneNo;
 	}
 
 }
