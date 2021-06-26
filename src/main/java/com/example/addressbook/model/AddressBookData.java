@@ -52,5 +52,20 @@ public class AddressBookData {
 		this.zip = addressBookDTO.zip;
 		this.PhoneNo = addressBookDTO.PhoneNo;
 	}
+
+	public AddressBookData(AddressBookDTO addressBookDTO) {
+		super();
+		this.updateAddressBookData(addressBookDTO);
+	}
+
+	public void updateAddressBookData(AddressBookDTO addressBookDTO) {
+		this.name = addressBookDTO.name;
+		this.address = addressBookDTO.address;
+		this.state = addressBookDTO.state;
+		this.city = addressBookDTO.city;
+		this.zip = addressBookDTO.zip;
+		this.PhoneNo = addressBookDTO.PhoneNo;
+		
+	}
 	
 }

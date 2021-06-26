@@ -1,7 +1,7 @@
 package com.example.addressbook.dto;
 
 import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotEmpty;
+
 import javax.validation.constraints.Pattern;
 
 import lombok.Data;
