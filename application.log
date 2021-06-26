@@ -1004,3 +1004,6 @@ Caused by: java.lang.Error: Unresolved compilation problem:
 2021-06-26 15:48:57.594 DEBUG 15992 --- [restartedMain] c.e.addressbook.AddressBookApplication   : Running with Spring Boot v2.5.1, Spring v5.3.8
 2021-06-26 15:48:57.595  INFO 15992 --- [restartedMain] c.e.addressbook.AddressBookApplication   : The following profiles are active: dev
 2021-06-26 15:49:03.134  WARN 15992 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-26 15:49:03.706  INFO 15992 --- [restartedMain] c.e.addressbook.AddressBookApplication   : Started AddressBookApplication in 6.597 seconds (JVM running for 8.036)
+2021-06-26 15:49:03.708  INFO 15992 --- [restartedMain] c.e.addressbook.AddressBookApplication   : Address Book app started in DEV Environment
+2021-06-26 15:49:03.710  INFO 15992 --- [restartedMain] c.e.addressbook.AddressBookApplication   : Address Book DB user is addressbookuser 
