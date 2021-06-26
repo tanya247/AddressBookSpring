@@ -661,3 +661,7 @@ Caused by: java.lang.IllegalArgumentException: Not a managed type: class com.exa
 2021-06-26 15:09:10.915  INFO 28724 --- [restartedMain] c.e.addressbook.AddressBookApplication   : Starting AddressBookApplication using Java 15.0.2 on LAPTOP-Q9T3UUC8 with PID 28724 (C:\Users\tanya\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\addressBook\bin\main started by tanya in C:\Users\tanya\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\addressBook)
 2021-06-26 15:09:10.916 DEBUG 28724 --- [restartedMain] c.e.addressbook.AddressBookApplication   : Running with Spring Boot v2.5.1, Spring v5.3.8
 2021-06-26 15:09:10.916  INFO 28724 --- [restartedMain] c.e.addressbook.AddressBookApplication   : The following profiles are active: dev
+2021-06-26 15:09:57.123  WARN 28724 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-26 15:09:57.257  INFO 28724 --- [restartedMain] c.e.addressbook.AddressBookApplication   : Started AddressBookApplication in 46.405 seconds (JVM running for 47228.648)
+2021-06-26 15:09:57.261  INFO 28724 --- [restartedMain] c.e.addressbook.AddressBookApplication   : Address Book app started in DEV Environment
+2021-06-26 15:09:57.262  INFO 28724 --- [restartedMain] c.e.addressbook.AddressBookApplication   : Address Book DB user is addressbookuser 
