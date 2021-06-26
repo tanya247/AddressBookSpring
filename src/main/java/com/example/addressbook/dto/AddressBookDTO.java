@@ -1,5 +1,6 @@
 package com.example.addressbook.dto;
 
+import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Pattern;
 
@@ -10,11 +11,11 @@ import lombok.ToString;
 public @ToString class AddressBookDTO {
 	@Pattern(regexp = "^[A-Z]{1}[a-zA-Z\\s]{2,}$",message ="Invalid Name")
 	public String name;
-	@NotEmpty(message = "Address must not be Empty")
+	@NotBlank(message = "Address must not be Empty")
 	public String address;
-	@NotEmpty(message = "State must not be Empty")
+	@NotBlank(message = "State must not be Empty")
 	public String state;
-	@NotEmpty(message = "City must not be Empty")
+	@NotBlank(message = "City must not be Empty")
 	public String city;
 	@Pattern(regexp = "^[0-9]{6}$",message ="Invalid Zip")
 	public String zip;
