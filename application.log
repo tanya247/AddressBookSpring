@@ -107,3 +107,6 @@ Caused by: java.lang.IllegalStateException: Using named parameters for method pu
 2021-06-29 11:14:32.625 DEBUG 31888 --- [restartedMain] c.e.addressbook.AddressBookApplication   : Running with Spring Boot v2.5.1, Spring v5.3.8
 2021-06-29 11:14:32.625  INFO 31888 --- [restartedMain] c.e.addressbook.AddressBookApplication   : The following profiles are active: dev
 2021-06-29 11:14:33.295  WARN 31888 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-29 11:14:33.449  INFO 31888 --- [restartedMain] c.e.addressbook.AddressBookApplication   : Started AddressBookApplication in 0.882 seconds (JVM running for 263.133)
+2021-06-29 11:14:33.452  INFO 31888 --- [restartedMain] c.e.addressbook.AddressBookApplication   : Address Book app started in DEV Environment
+2021-06-29 11:14:33.452  INFO 31888 --- [restartedMain] c.e.addressbook.AddressBookApplication   : Address Book DB user is addressbookuser 
