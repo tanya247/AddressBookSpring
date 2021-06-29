@@ -14,6 +14,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.addressbook.dto.AddressBookDTO;
@@ -44,6 +46,12 @@ public class AddressBookController {
 		AddressBookData addressBookData = addressBookService.getAddressBookDataById(addId);
 		ResponseDTO respDTO = new ResponseDTO("Get Call Success", addressBookData);
 		return new ResponseEntity<ResponseDTO>(respDTO, HttpStatus.OK);
+	}
+	@GetMapping("/name/{name}")
+	public ResponseEntity<ResponseDTO>findByName(@PathVariable("name") String name){
+		List<AddressBookData> addressBookData = addressBookService.getContactDetailsByName(name);
+		ResponseDTO responseDto = new ResponseDTO("The Contact Details are", addressBookData);
+		return new ResponseEntity<ResponseDTO>(responseDto, HttpStatus.OK);
 	}
 	
 	@PostMapping("/create")
